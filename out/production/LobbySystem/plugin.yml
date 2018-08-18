@@ -1,0 +1,14 @@
+name: LobbySystem
+version: A1.0
+author: PixelTeleV
+
+main: ch.PixelTV.Main.Main
+
+commands:
+  gm:
+    description: GameMode Command
+    aliases: [gamemode]
+  build:
+    description: Build Command
+  fly:
+    description: Fly Command

@@ -1,3 +1,5 @@
+softdepend: [CloudNetAPI]
+
 name: LobbySystem
 version: B1.0
 author: PixelTeleV

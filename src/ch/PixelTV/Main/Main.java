@@ -1,6 +1,5 @@
 package ch.PixelTV.Main;
 
-import ch.PixelTV.Commands.Build;
 import ch.PixelTV.Commands.Fly;
 import ch.PixelTV.Commands.GameMode;
 import ch.PixelTV.Commands.Rank;
@@ -49,7 +48,7 @@ public class Main extends JavaPlugin {
         //Listeners
         PluginManager pm = Bukkit.getPluginManager();
 
-        pm.registerEvents(new ch.PixelTV.Listeners.Build(), this);
+        pm.registerEvents(new Build(), this);
         pm.registerEvents(new Damage(), this);
         pm.registerEvents(new Join(), this);
         pm.registerEvents(new Kick(), this);
@@ -68,7 +67,7 @@ public class Main extends JavaPlugin {
 
         //Commands
         getCommand("gm").setExecutor(new GameMode());
-        getCommand("build").setExecutor(new Build());
+        getCommand("build").setExecutor(new ch.PixelTV.Commands.Build());
         getCommand("fly").setExecutor(new Fly());
         getCommand("rank").setExecutor(new Rank());
     }

@@ -19,7 +19,6 @@ public class Damage implements Listener {
     @EventHandler(priority=EventPriority.HIGHEST)
     public void on(EntityDamageEvent event) {
         if (event.getEntity() instanceof Player) {
-            Player p = (Player) event.getEntity();
             if (Main.buildmode.contains(event.getEntity())) {
                 event.setCancelled(false);
             } else {

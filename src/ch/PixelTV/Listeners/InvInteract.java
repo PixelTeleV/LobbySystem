@@ -71,8 +71,6 @@ public class InvInteract implements Listener {
             } else if (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase("§aTeam")) {
                 Location loct = new Location(Bukkit.getWorld("world"), 20.0, 100.0, 20.0);
                 p.teleport(loct);
-            } else {
-
             }
         }
     }

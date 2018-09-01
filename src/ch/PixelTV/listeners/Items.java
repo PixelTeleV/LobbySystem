@@ -1,4 +1,4 @@
-package ch.PixelTV.Listeners;
+package ch.PixelTV.listeners;
 
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

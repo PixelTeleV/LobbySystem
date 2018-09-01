@@ -1,7 +1,7 @@
-package ch.PixelTV.Listeners;
+package ch.PixelTV.listeners;
 
-import ch.PixelTV.Main.Main;
-import ch.PixelTV.Utils.ItemUtils;
+import ch.PixelTV.main.Main;
+import ch.PixelTV.utils.ItemUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

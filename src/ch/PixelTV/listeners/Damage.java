@@ -1,6 +1,6 @@
-package ch.PixelTV.Listeners;
+package ch.PixelTV.listeners;
 
-import ch.PixelTV.Main.Main;
+import ch.PixelTV.main.Main;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

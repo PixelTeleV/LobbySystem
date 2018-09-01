@@ -1,4 +1,4 @@
-package ch.PixelTV.Utils;
+package ch.PixelTV.utils;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

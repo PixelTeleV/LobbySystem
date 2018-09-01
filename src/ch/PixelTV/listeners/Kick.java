@@ -1,10 +1,11 @@
-package ch.PixelTV.Listeners;
+package ch.PixelTV.listeners;
 
-import ch.PixelTV.Main.Main;
+import ch.PixelTV.main.Main;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.event.player.PlayerKickEvent;
 
 /**
  * Coded by PixelTeleV
@@ -13,13 +14,14 @@ import org.bukkit.event.player.PlayerQuitEvent;
  * Decompiling is strictly forbidden!
  * Coded with Intellij
  */
-public class Quit implements Listener {
+public class Kick implements Listener {
 
-    @EventHandler
-    public void onQuit(PlayerQuitEvent e) {
+    @EventHandler(priority=EventPriority.HIGHEST)
+    public void onKick(PlayerKickEvent e) {
         Player p = e.getPlayer();
 
-        e.setQuitMessage(null);
+        e.setReason("Du wurdest vom lokalen Server gekickt!");
+        e.setLeaveMessage(null);
 
         if(Main.buildmode.contains(p)) {
             Main.buildmode.remove(p);

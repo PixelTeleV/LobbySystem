@@ -27,7 +27,7 @@ public class Compass implements Listener {
         ItemStack placeholder2 = ItemUtils.getItem(Material.STAINED_GLASS_PANE, " ", "", 5, 1);
         ItemStack spawn = ItemUtils.getItem(Material.NETHER_STAR, "§bSpawn", "§7Rechtsklick zum §ateleportieren§7!", 0, 1);
         ItemStack freebuild = ItemUtils.getItem(Material.GRASS, "§aFreeBuild", "§7Rechtsklick zum §ateleportieren§7!", 0, 1);
-        ItemStack team = ItemUtils.getHead("PixelTeleV", "§aTeam", "§7Rechtsklick zum §ateleportieren§7!", 1);
+        ItemStack team = ItemUtils.getHead(p.getName(), "§aTeam", "§7Rechtsklick zum §ateleportieren§7!", 1);
 
         compass.setItem(0, placeholder2);
         compass.setItem(1, placeholder);
@@ -62,7 +62,7 @@ public class Compass implements Listener {
 
     }
 
-    public static void openPlayerHider(Player player) {
+    public static void openPlayerHider(Player p) {
 
         Inventory playerhider = Bukkit.createInventory(null, InventoryType.BREWING, "§6Sichtbarkeit");
 
@@ -103,7 +103,8 @@ public class Compass implements Listener {
             }
         }, 2);
 
-        player.openInventory(playerhider);
+        //Open Playerhider
+        p.openInventory(playerhider);
     }
 
 }

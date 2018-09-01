@@ -37,7 +37,7 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("§7Plugin: §aLobbySystem");
         Bukkit.getConsoleSender().sendMessage("§7Author: §aPixelTeleV");
         Bukkit.getConsoleSender().sendMessage("§7Version: §aBeta 1.0");
-        Bukkit.getConsoleSender().sendMessage("§7Licensed for: §aLocal Test Usage");
+        Bukkit.getConsoleSender().sendMessage("§7Licensed for: §aEpicPixelMC.de");
         Bukkit.getConsoleSender().sendMessage("§4§lCopyright PixelTeleV 2018");
         Bukkit.getConsoleSender().sendMessage("§a§lPlugin activated!");
         Bukkit.getConsoleSender().sendMessage("§b§m------------------");
@@ -78,7 +78,7 @@ public class Main extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage("§7Plugin: §aLobbySystem");
         Bukkit.getConsoleSender().sendMessage("§7Author: §aPixelTeleV");
         Bukkit.getConsoleSender().sendMessage("§7Version: §aBeta 1.0");
-        Bukkit.getConsoleSender().sendMessage("§7Licensed for: §aLocal Test Usage");
+        Bukkit.getConsoleSender().sendMessage("§7Licensed for: §aEpicPixelMC.de");
         Bukkit.getConsoleSender().sendMessage("§4§lCopyright PixelTeleV 2018");
         Bukkit.getConsoleSender().sendMessage("§c§lPlugin deactivated!");
         Bukkit.getConsoleSender().sendMessage("§b§m------------------");

@@ -1,9 +1,9 @@
-package ch.PixelTV.main;
+package ch.pixeltv.main;
 
-import ch.PixelTV.commands.Fly;
-import ch.PixelTV.commands.GameMode;
-import ch.PixelTV.commands.Rank;
-import ch.PixelTV.listeners.*;
+import ch.pixeltv.commands.Fly;
+import ch.pixeltv.commands.GameMode;
+import ch.pixeltv.commands.Rank;
+import ch.pixeltv.listeners.*;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
@@ -67,7 +67,7 @@ public class Main extends JavaPlugin {
 
         //commands
         getCommand("gm").setExecutor(new GameMode());
-        getCommand("build").setExecutor(new ch.PixelTV.commands.Build());
+        getCommand("build").setExecutor(new ch.pixeltv.commands.Build());
         getCommand("fly").setExecutor(new Fly());
         getCommand("rank").setExecutor(new Rank());
     }

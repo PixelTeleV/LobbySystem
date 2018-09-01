@@ -1,4 +1,4 @@
-package ch.PixelTV.listeners;
+package ch.pixeltv.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

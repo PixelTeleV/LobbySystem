@@ -1,6 +1,6 @@
-package ch.PixelTV.listeners;
+package ch.pixeltv.listeners;
 
-import ch.PixelTV.main.Main;
+import ch.pixeltv.main.Main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerDropItemEvent;

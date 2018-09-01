@@ -1,4 +1,4 @@
-package ch.PixelTV.listeners;
+package ch.pixeltv.listeners;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

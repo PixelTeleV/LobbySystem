@@ -1,4 +1,4 @@
-package ch.PixelTV.listeners;
+package ch.pixeltv.listeners;
 
 import de.dytanic.cloudnet.bridge.CloudServer;
 import org.bukkit.entity.Player;

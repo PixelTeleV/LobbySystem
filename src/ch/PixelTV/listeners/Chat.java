@@ -1,4 +1,4 @@
-package ch.PixelTV.listeners;
+package ch.pixeltv.listeners;
 
 import de.dytanic.cloudnet.api.CloudAPI;
 import de.dytanic.cloudnet.bridge.CloudServer;

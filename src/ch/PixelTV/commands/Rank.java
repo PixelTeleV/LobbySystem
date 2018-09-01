@@ -1,6 +1,6 @@
-package ch.PixelTV.commands;
+package ch.pixeltv.commands;
 
-import ch.PixelTV.main.Main;
+import ch.pixeltv.main.Main;
 import de.dytanic.cloudnet.api.CloudAPI;
 import de.dytanic.cloudnet.bridge.CloudServer;
 import de.dytanic.cloudnet.lib.player.PlayerExecutor;

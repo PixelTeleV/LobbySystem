@@ -3,6 +3,7 @@ package ch.PixelTV.Main;
 import ch.PixelTV.Commands.Build;
 import ch.PixelTV.Commands.Fly;
 import ch.PixelTV.Commands.GameMode;
+import ch.PixelTV.Commands.Rank;
 import ch.PixelTV.Listeners.*;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -69,6 +70,7 @@ public class Main extends JavaPlugin {
         getCommand("gm").setExecutor(new GameMode());
         getCommand("build").setExecutor(new Build());
         getCommand("fly").setExecutor(new Fly());
+        getCommand("rank").setExecutor(new Rank());
     }
 
 

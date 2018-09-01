@@ -14,3 +14,5 @@ commands:
     description: Build Command
   fly:
     description: Fly Command
+  rank:
+    description: Rank Command

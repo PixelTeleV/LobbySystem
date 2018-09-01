@@ -63,6 +63,7 @@ public class Main extends JavaPlugin {
         pm.registerEvents(new Interact(), this);
         pm.registerEvents(new InvInteract(), this);
         pm.registerEvents(new Chat(), this);
+        pm.registerEvents(new Tablist(), this);
 
         //Commands
         getCommand("gm").setExecutor(new GameMode());

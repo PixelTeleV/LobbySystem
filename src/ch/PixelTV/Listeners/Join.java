@@ -1,5 +1,7 @@
 package ch.PixelTV.Listeners;
 
+import de.dytanic.cloudnet.bridge.CloudServer;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -26,6 +28,11 @@ public class Join implements Listener {
         p.setFoodLevel(20);
         p.setMaxHealth(20);
         p.setHealth(20);
+
+
+        //Tablist
+        CloudServer.getInstance().updateNameTags(e.getPlayer());
+
     }
 
 }

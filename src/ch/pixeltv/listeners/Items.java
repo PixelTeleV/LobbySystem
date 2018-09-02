@@ -37,7 +37,7 @@ public class Items implements Listener {
         ItemStack kopf = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);
         SkullMeta kopfm = (SkullMeta) kopf.getItemMeta();
         kopfm.setOwner(p.getName());
-        kopfm.setDisplayName("§bFreunde §8× §cComing Soon");
+        kopfm.setDisplayName("§bFreunde §8× §7Rechtsklick");
         kopf.setItemMeta(kopfm);
 
         p.getInventory().clear();

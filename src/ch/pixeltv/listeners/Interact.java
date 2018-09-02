@@ -1,5 +1,6 @@
 package ch.pixeltv.listeners;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -31,6 +32,11 @@ public class Interact implements Listener {
                 Compass.openPlayerHider(p);
             }
         }
-    }
 
+        if (e.getAction() == Action.RIGHT_CLICK_AIR || e.getAction() == Action.RIGHT_CLICK_BLOCK) {
+            if (p.getItemInHand().getType() == Material.SKULL || p.getItemInHand().getType() == Material.SKULL_ITEM) {
+                Bukkit.getServer().dispatchCommand(p, "/friend");
+            }
+        }
+    }
 }

@@ -4,7 +4,7 @@ name: LobbySystem
 version: B1.0
 author: PixelTeleV
 
-main: ch.pixeltv.main.main
+main: ch.pixeltv.main.Main
 
 commands:
   gm:

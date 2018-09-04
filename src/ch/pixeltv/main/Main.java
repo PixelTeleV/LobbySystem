@@ -57,13 +57,15 @@ public class Main extends JavaPlugin {
         pm.registerEvents(new FoodLevel(), this);
         pm.registerEvents(new Drop(), this);
         pm.registerEvents(new PickUp(), this);
-        pm.registerEvents(new Enterhaken(), this);
+        // pm.registerEvents(new Enterhaken(), this);
         pm.registerEvents(new Items(), this);
         pm.registerEvents(new Compass(), this);
         pm.registerEvents(new Interact(), this);
         pm.registerEvents(new InvInteract(), this);
         pm.registerEvents(new Chat(), this);
         pm.registerEvents(new Tablist(), this);
+        pm.registerEvents(new Reload(), this);
+        pm.registerEvents(new Join(), this);
 
         //commands
         getCommand("gm").setExecutor(new GameMode());

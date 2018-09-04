@@ -28,7 +28,7 @@ public class Join implements Listener {
 
         e.setJoinMessage(null);
 
-        p.sendMessage("§aWillkommen auf dem Server und viel Spass beim spielen!");
+        p.sendMessage("§aWillkommen auf §5EpicPixelMC.de §aund viel Spass beim Spielen!");
         p.setFoodLevel(20);
         p.setMaxHealth(20);
         p.setHealth(20);

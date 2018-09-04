@@ -31,7 +31,7 @@ public class Items implements Listener {
 
         ItemStack eh = new ItemStack(Material.FISHING_ROD);
         ItemMeta ehm = eh.getItemMeta();
-        ehm.setDisplayName("§bEnterhaken §8× §7Rechtsklick");
+        ehm.setDisplayName("§bEnterhaken §8× §cComing soon");
         eh.setItemMeta(ehm);
 
         ItemStack kopf = new ItemStack(Material.SKULL_ITEM, 1, (short) 3);

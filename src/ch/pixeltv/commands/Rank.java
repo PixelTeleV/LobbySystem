@@ -48,19 +48,19 @@ public class Rank implements CommandExecutor {
                     if (args[0].equalsIgnoreCase("prefix")) {
                         if (permissionPool.getGroups().containsKey(args[1])) {
                             permissionPool.getGroups().get(args[1]);
-                            permissionGroup.setPrefix(args[2].replaceAll("&", "§"));
+                            permissionGroup.setDisplay(args[2].replaceAll("&", "§"));
                             CloudAPI.getInstance().updatePermissionGroup(permissionGroup);
-                            p.sendMessage(Main.pr + "Du hast den §aPrefix §7der §aGruppe §e" + permissionGroup.getName() + " §7zu §e" + permissionGroup.getPrefix() + " §ageändert§7!");
+                            p.sendMessage(Main.pr + "Du hast den §aPrefix §7der §aGruppe §e" + permissionGroup.getName() + " §7zu §e" + permissionGroup.getDisplay() + " §ageändert§7!");
                         } else {
                             p.sendMessage(Main.pr + "Die angegebene §eGruppe §cexistiert nicht§7!");
                         }
                     } else {
-                        p.sendMessage(Main.syntax + "/rank <set | prefix>");
+                        p.sendMessage(Main.syntax + "/rank set <User> <Gruppe> <Zeit> | prefix <Gruppe> <Prefix>");
                     }
                 } else if(args.length == 4) {
                         if(args[0].equalsIgnoreCase("set")) {
                             if(permissionPool.getGroups().containsKey(args[2])) {
-                                player.getPermissionEntity().getGroups().add(new GroupEntityData(args[2], 1L));
+                                Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "perms USER " + args[1] + " GROUP SET " + args[2] + " " + args[3]);
                                 CloudAPI.getInstance().updatePlayer(player);
                                 playerExecutor.kickPlayer(player, Main.pr + "Du hast einen neuen §eRang §aerhalten: §e" + player.getPermissionEntity().getHighestPermissionGroup(permissionPool).getName());
                                 p.sendMessage(Main.pr + "Du hast den §eRang §7für §e" + player.getName() + " §7auf §e" + player.getPermissionEntity().getHighestPermissionGroup(permissionPool).getName() + " §agesetzt§7!");
@@ -68,10 +68,10 @@ public class Rank implements CommandExecutor {
                                 p.sendMessage(Main.pr + "Die angegebene §eGruppe §cexistiert nicht§7!");
                             }
                     } else {
-                        p.sendMessage(Main.syntax + "/rank <set | prefix>");
+                        p.sendMessage(Main.syntax + "/rank set <User> <Gruppe> <Zeit> | prefix <Gruppe> <Prefix>");
                     }
                 } else {
-                    p.sendMessage(Main.syntax + "/rank <set | prefix>");
+                    p.sendMessage(Main.syntax + "/rank set <User> <Gruppe> <Zeit> | prefix <Gruppe> <Prefix>");
                 }
             } else {
                 p.sendMessage(Main.noperm);
